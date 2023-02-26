@@ -1,17 +1,13 @@
-let num1 = prompt("Введите число");
-let operator = prompt("Введите оператор '+' '-' '*' '/' ");
-let num2 = prompt("Введите число");
-let result;
+let num1 = prompt("Введите первое число:");
+let num2 = prompt("Введите второе число:");
 
-if (operator == '+') {
-	result = Number(num1) + Number(num2);
-} else if (operator == '-') {
-	result = num1 - num2;
-} else if (operator == '*') {
-	result = num1 * num2;
-} else {
-	result = num1 / num2;
-}
 
-alert(result);
+num1 = Number(num1);
+num2 = Number(num2);
 
+
+alert("Пользователь ввёл число " + num1 + " а также число " + num2 + ". Давайте посмотрим на результат:\n\n" +
+      num1 + "+" + num2 + "=" + (num1 + num2) + "\n" +
+      num1 + "-" + num2 + "=" + (num1 - num2) + "\n" +
+      num1 + "*" + num2 + "=" + (num1 * num2) + "\n" +
+      num1 + "/" + num2 + "=" + (num1 / num2));
